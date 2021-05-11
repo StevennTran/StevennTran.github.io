@@ -1,4 +1,3 @@
-!
 <!DOCTYPE html>
 
 <html>
@@ -9,12 +8,214 @@
     <title>Steven Tran</title>
     <meta name="description" content="Personal Website for my projects">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./Resources/css/style.css">
+    <link rel="stylesheet" href="./Resources/css/bootstrap.css">
+    <link rel="stylesheet" href="./Resources/css/font-awesome.min.css">
+    <link rel="icon" href="./Resources/img/logo.png">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+
+    <button onclick="topFunction()" id="backToTop" title="Go to top">&uarr;</button>
+
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" style="margin-left: 2%; font-size: 2rem;" href=""> <img
+                    src="./Resources/img/logo.png" style=" width: 30px; height: auto;"> Steven Tran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto ps-auto" style="margin-right: 2%">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="bigBanner">
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bannerContent row">
+                <div class="temp col-sm-6">
+                    <h2 class="centerText">Welcome to my </br>Website</h2><br><br><br><br><br><br><br><br>
+                    <h4 id="socialText">Get Connected</h4>
+                    <br>
+                    <div id="socialMedia">
+                        <a href="https://www.linkedin.com/in/stevenntran/"><img class="imgIcon"
+                                src="./Resources/img/linkedin.png"></a>
+                        <a href="https://github.com/StevennTran"><img class="imgIcon"
+                                src="./Resources/img/github.png"></a>
+                        <a href="https://devpost.com/StevennTran"><img class="imgIcon"
+                                src="./Resources/img/devpost.png"></a>
+                        <a href="https://drive.google.com/file/d/1QNovGWfdSbhtEKDeINlfRMB6RU4feD8g/view?usp=sharing"><button
+                                id="resumeButton">Download Resume</button></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div id="featureHeader">Featured Projects</div>
+                    <br>
+                    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 5rem; padding-right: 5rem;">
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src="./Resources/img/limitedBooksLogo.png"
+                                    class="card-img-top" alt="Limited Books Logo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Limited Books</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
+                                        text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src=" ./Resources/img/MindfulnessIcon.png"
+                                    class="card-img-top" alt="Mindfulness Logo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mindfulness</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
+                                        text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src="./Resources/img/pashLogo.png" class="card-img-top"
+                                    alt="Pash Logo">
+                                <div class=" card-body">
+                                    <h5 class="card-title">Pash - Language & Compiler</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
+                                        text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="introduction">
+        <div class="headline">Introduction</div>
+        <div class="content">
+            <div id="left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
+                scelerisque.
+                Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
+                lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
+                venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus,
+                dictum
+                interdum nunc fringilla a. Proin ornare elementum tempor.
+
+                Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
+                pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
+                Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id
+                aliquet
+                lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
+                porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
+                volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.
+            </div>
+            <div id="right">
+                <img src="./Resources/img/logo.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <br><br>
+        <div class="headline">Skills</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
+            scelerisque.
+            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
+            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
+            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
+            interdum nunc fringilla a. Proin ornare elementum tempor.
+
+            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
+            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
+            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
+            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
+            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
+            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+    </section>
+    <section id="projects">
+        <div class="headline">Projects</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
+            scelerisque.
+            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
+            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
+            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
+            interdum nunc fringilla a. Proin ornare elementum tempor.
+
+            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
+            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
+            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
+            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
+            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
+            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+    </section>
+
+    <section id="contact">
+        <div class="headline">Contact</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
+            scelerisque.
+            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
+            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
+            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
+            interdum nunc fringilla a. Proin ornare elementum tempor.
+
+            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
+            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
+            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
+            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
+            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
+            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+    </section>
 
 </body>
+
+
+<!--Bootstrap js file -->
+<script src="./Resources/JavaScript/bootstrap.js"></script>
+<script src="./Resources/JavaScript/scripts.js"></script>
 
 </html>
