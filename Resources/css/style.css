@@ -154,6 +154,7 @@ html {
 
 #welcome {
   font-size: 5vw;
+  padding-left: 2rem;
 }
 
 .temp {
@@ -450,8 +451,8 @@ img.featuredIcon {
 
 .project {
   position: relative;
-  padding-left: 30vh;
-  padding-right: 30vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
   margin-bottom: 30px;
   height: 38vh;
   /* width: 70vw; */
@@ -482,13 +483,15 @@ img.featuredIcon {
 }
 
 .projImg {
-  height: 25vh;
-  width: auto;
+  /* height: 25vh; */
+  width: 20vw;
+  max-width: 60%;
+  height: auto;
   margin-bottom: 1.5vh;
 }
 
 .projDesc {
-  padding-top: 6vh;
+  padding-top: 3vh;
   padding-bottom: 6vh;
   padding-left: 2vh;
   width: 70%;
@@ -496,6 +499,10 @@ img.featuredIcon {
   overflow: hidden;
   /* background-color: red; */
   /* vertical-align: middle; */
+}
+
+.dev {
+  margin-top: 2vh;
 }
 
 .redirect {
@@ -507,7 +514,7 @@ img.featuredIcon {
   text-align: center;
   font-size: 1.2vw;
   padding: 1.2vh;
-  width: 9vw;
+  width: 15vw;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
