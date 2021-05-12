@@ -1,11 +1,76 @@
 :root {
-  /* --gradiant: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  /* --gradiant: linear-gradient(90deg, #0f0c29, #302b63, #24243e); */
-  --gradiant: linear-gradient(90deg, #16bffd, #cb3066);
+  --headline-gradiant: linear-gradient(90deg, #16bffd, #cb3066);
+  --scroll-gradiant: linear-gradient(to top, #a8c0ff, #3f2b96);
+}
+
+.filled-skill {
+  --fill-colour: dodgerblue;
+}
+
+.unfill-skill {
+  --fill-colour: white;
 }
 
 html {
   font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+#progressBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  /* height: 100%; */
+  z-index: 100;
+  background: var(--scroll-gradiant);
+  /* background: linear-gradient(to top, #008aff, #00ffe7); */
+
+  animation: scrollAnimate 10s linear infinite;
+}
+
+#progressBar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--scroll-gradiant);
+
+  /* filter: blur(10px); */
+}
+
+#progressBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--scroll-gradiant);
+
+  /* filter: blur(10px); */
+}
+
+@keyframes scrollAnimate {
+  0% {
+    /* filter: hue-rotate(0deg); */
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 #backToTop {
@@ -19,10 +84,13 @@ html {
   font-size: 36px;
   border: none;
   outline: none;
-  background-color: red;
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
   border-radius: 50%;
   color: white;
   cursor: pointer;
+
+  background-size: 300%;
+  animation: gradient 5s infinite alternate;
 }
 
 #backToTop:hover {
@@ -32,12 +100,12 @@ html {
 .headline {
   text-align: center;
   font-size: 40pt;
-  margin-top: 50pt;
+  margin-top: 30pt;
 }
 
 .content {
   font-size: 18pt;
-  padding: 5%;
+  padding: 3%;
 }
 
 .navbar-nav > li {
@@ -67,7 +135,7 @@ html {
   font-weight: 900pt;
   font-size: 8rem;
 
-  background-image: var(--gradiant);
+  background-image: var(--headline-gradiant);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -270,8 +338,164 @@ img.featuredIcon {
 }
 
 #right {
+  /* padding-top: 50%; */
+  /* position: relative;
+  top: 0; */
   width: 30%;
-  padding-left: 10%;
-  /* float: right; */
+  text-align: center;
+  float: right;
   overflow: hidden;
+
+  /* transform: translate(0%, 50%); */
+}
+
+#skillsContent {
+  /* color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  background: #010615;
+  z-index: 3;
+}
+
+.box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  /* background: #060c21; */
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.box:hover {
+  height: 450px;
+}
+
+.box:hover .imgBox img {
+  opacity: 0.001;
+}
+
+.skillInfo {
+  z-index: 5;
+  opacity: 0;
+}
+
+.box .imgBox img {
+  max-width: 100%;
+  transition: 0.5s;
+  z-index: 8;
+}
+
+.box:hover .skillInfo {
+  opacity: 1;
+}
+
+.box .skillInfo {
+  position: absolute;
+  top: 0%;
+}
+
+.box:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: white;
+  z-index: -1;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: white;
+  z-index: -2;
+  filter: blur(10px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(235deg, #004ff9, #fff94c);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+  background: linear-gradient(235deg, #b92b27, #1565c0);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+  background: linear-gradient(235deg, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+#projects {
+  padding-bottom: 5vh;
+}
+
+.project {
+  position: relative;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  margin-bottom: 50px;
+  height: 38vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projLogo {
+  width: 30%;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  /* background-color: #004ff9; */
+}
+
+.projImg {
+  height: 25vh;
+  width: auto;
+}
+
+.projDesc {
+  width: 70%;
+  float: right;
+  overflow: hidden;
+  /* background-color: red; */
+  vertical-align: middle;
+}
+
+.footer {
+  background-color: #302b63;
+}
+
+.footer-text {
+  font-size: 18px;
+}
+
+.footer-container {
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+footer a {
+  font-size: 20px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: #bd5fec;
+}
+
+#mailLink:hover {
+  color: #6f75f3;
 }

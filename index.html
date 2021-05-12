@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="./Resources/css/bootstrap.css">
     <link rel="stylesheet" href="./Resources/css/font-awesome.min.css">
     <link rel="icon" href="./Resources/img/logo.png">
+
+    <!-- fill:dodgerblue; -->
+
+
 </head>
 
 <body>
-
     <button onclick="topFunction()" id="backToTop" title="Go to top">&uarr;</button>
 
     <header>
@@ -86,10 +89,9 @@
                                     class="card-img-top" alt="Limited Books Logo">
                                 <div class="card-body">
                                     <h5 class="card-title">Limited Books</h5>
-                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
-                                        text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text" style="font-size: 1.3rem;"> An online management system
+                                        where users can view and purchase
+                                        their favourite books from the comfort of their own home.</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="#projects" class="btn btn-primary">View project</a>
@@ -102,10 +104,9 @@
                                     class="card-img-top" alt="Mindfulness Logo">
                                 <div class="card-body">
                                     <h5 class="card-title">Mindfulness</h5>
-                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
-                                        text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text" style="font-size: 1.3rem;">The all-in-one mental wellness app
+                                        that provides
+                                        the user with activites and advice with respective to their emotion/mood</p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="#projects" class="btn btn-primary">View project</a>
@@ -114,14 +115,15 @@
                         </div>
                         <div class="col">
                             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
-                                <img class="featuredIcon" src="./Resources/img/pashLogo.png" class="card-img-top"
+                                <img class="featuredIcon" src="./Resources/img/caboIcon.png" class="card-img-top"
                                     alt="Pash Logo">
                                 <div class=" card-body">
-                                    <h5 class="card-title">Pash - Language & Compiler</h5>
-                                    <p class="card-text" style="font-size: 1.3rem;">This is a wider card with supporting
-                                        text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Cabo</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">A card game called <em>Cabo</em>
+                                        with its main purpose being to improve memory of the users. The game was
+                                        developed and designed in Android Studio using XML and Java for the front and
+                                        back-end coding.
+                                    </p>
                                 </div>
                                 <div class="card-footer">
                                     <a href="#projects" class="btn btn-primary">View project</a>
@@ -134,25 +136,21 @@
         </div>
     </header>
 
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
     <section id="introduction">
         <div class="headline">Introduction</div>
-        <div class="content">
+        <div class="content" style="height: 300px;">
             <div id="left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
-                scelerisque.
-                Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
-                lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
-                venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus,
-                dictum
-                interdum nunc fringilla a. Proin ornare elementum tempor.
-
-                Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
-                pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
-                Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id
-                aliquet
-                lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
-                porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
-                volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.
+                <span style="font-size: 24pt;font-weight: 900;">Hello and welcome to my website! </span><br>My name is
+                Steven Tran, a
+                recent Computer Science Graduate from
+                Wilfrid Laurier University. I’m a
+                passionate individual who enjoys problem solving & thinking creatively. I'm known for being a
+                detail-oriented, well-organized team
+                player who won't be satisfied until the job is done. I never miss deadlines, I'm a good communicator
+                and I can juggle multiple tasks at once. With my educational background coming out of post-secondary,
+                I'm looking forward for an opportunity to take the next step in my career.
             </div>
             <div id="right">
                 <img src="./Resources/img/logo.png">
@@ -160,58 +158,205 @@
         </div>
     </section>
 
-    <section id="skills">
-        <br><br>
-        <div class="headline">Skills</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
-            scelerisque.
-            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
-            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
-            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
-            interdum nunc fringilla a. Proin ornare elementum tempor.
+    <br><br>
+    <div id="skills" class="headline" style="background-color: black;color: white;padding-top: 20pt;">Skills</div>
+    <section id="skillsContent">
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/python.png">
+            </div>
+            <div class="skillInfo">
+                <h2>Python</h2>
+                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <svg class="filled-skill" width="35" height="20">
+                    <rect id="skillLevel" rx="6" ry="6" width="35" height="20"
+                        style="fill: var(--fill-colour);stroke:rgb(24, 63, 172);stroke-width:0.8;opacity:0.7" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+            </div>
+        </div>
 
-            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
-            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
-            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
-            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
-            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
-            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/java.png">
+            </div>
+            <div class="skillInfo">
+                <h2>Java</h2>
+                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="unfill-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/webdev.png">
+            </div>
+            <div class="skillInfo">
+                <h2>HTML</h2>
+                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+                <h2>CSS</h2>
+                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+                <h2>JavaScript</h2>
+                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="unfill-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+            </div>
+        </div>
+
+
     </section>
     <section id="projects">
         <div class="headline">Projects</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
-            scelerisque.
-            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
-            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
-            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
-            interdum nunc fringilla a. Proin ornare elementum tempor.
+        <div class="content">
 
-            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
-            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
-            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
-            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
-            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
-            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+            <div id="LimitedBooks" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/LimitedBooksLogo.png">
+                    <br>
+                    <button>Click me</button>
+                </div>
+                <div class="projDesc">
+                    <h3>This is where I will write my details about the peoject that i made</h3>
+                </div>
+            </div>
+
+            <div id="Cabo" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/caboIcon.png">
+                    <br>
+                    <button>Click me</button>
+                </div>
+                <div class="projDesc">
+                    <h3>This is where I will write my details about the peoject that i made</h3>
+                </div>
+            </div>
+
+            <div id="Mindfulness" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/MindfulnessIcon.png">
+                    <br>
+                    <button>Click me</button>
+                </div>
+                <div class="projDesc">
+                    <h3>This is where I will write my details about the peoject that i made</h3>
+                </div>
+            </div>
+
+            <div id="LimitedBooks" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/LimitedBooksLogo.png">
+                    <br>
+                    <button>Click me</button>
+                </div>
+                <div class="projDesc">
+                    <h3>This is where I will write my details about the peoject that i made</h3>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section id="contact">
-        <div class="headline">Contact</div>
-        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et urna id elit dapibus
-            scelerisque.
-            Donec consequat, justo ac pellentesque porta, mauris mauris hendrerit libero, eu sagittis ligula dui id
-            lacus. Mauris id eros at dolor vehicula molestie a a dolor. Proin congue posuere bibendum. Suspendisse
-            venenatis egestas dignissim. Vivamus et dictum metus, ut consectetur mi. Nulla euismod lorem metus, dictum
-            interdum nunc fringilla a. Proin ornare elementum tempor.
-
-            Donec bibendum id ex vel pretium. Morbi vel volutpat arcu. Nam aliquet arcu eros, vitae feugiat risus
-            pretium in. Cras condimentum pharetra libero at blandit. Nullam non finibus odio. Donec nec finibus leo.
-            Etiam lectus lacus, efficitur vitae ante eget, efficitur rutrum lacus. Proin interdum enim lacus, id aliquet
-            lorem sagittis vitae. Maecenas quis sapien lectus. Nullam non ex arcu. Aenean sit amet dolor at ante
-            porttitor porta vitae id orci. Quisque mattis mi id maximus dictum. Nullam nec tincidunt odio, rutrum
-            volutpat orci. Ut non purus sodales, pellentesque lorem ac, fermentum metus.</div>
+        <footer class="footer" id="footerId">
+            <div class="container-fluid">
+                <div class="footer-container">
+                    <div class=" row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <h5 class="footer-text"><a id="mailLink"
+                                    href="mailto:steven.tran38@hotmail.com">steven.tran38@hotmail.com</a></h5><br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <a href="https://www.linkedin.com/in/stevenntran/"><img class="imgIcon"
+                                    src="./Resources/img/linkedin.png"></a>
+                            <a href="https://github.com/StevennTran"><img class="imgIcon"
+                                    src="./Resources/img/github.png"></a>
+                            <a href="https://devpost.com/StevennTran"><img class="imgIcon"
+                                    src="./Resources/img/devpost.png"></a>
+                        </div>
+                    </div>
+                    <h4 style="text-align: center; color: white;margin-top: 30px;">Designed and developed by <u>Steven
+                            Tran</u></h4>
+                </div>
+            </div>
+        </footer>
     </section>
 
 </body>
+
+
 
 
 <!--Bootstrap js file -->

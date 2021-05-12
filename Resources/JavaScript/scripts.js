@@ -1,7 +1,12 @@
 var mybutton = document.getElementById("backToTop");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+let progress = document.getElementById('progressBar')
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+    scrollFunction()
+    let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+}
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
