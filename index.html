@@ -64,8 +64,8 @@
             </div>
             <div class="bannerContent row">
                 <div class="temp col-sm-6">
-                    <h2 class="centerText">Welcome to my </br>Website</h2><br>
-                    <h2 style="color: white;">(Work in progress...)</h2> <br><br><br><br><br><br><br>
+                    <h2 id="welcome" class="centerText">Welcome to my </br>Website</h2><br>
+                    <h2 style="color: white;">(Work in progress...)</h2>
                     <h4 id="socialText">Get Connected</h4>
                     <br>
                     <div id="socialMedia">
@@ -95,7 +95,7 @@
                                         their favourite books from the comfort of their own home.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                    <a href="#LimitedBooks" class="btn btn-primary">View project</a>
                                 </div>
                             </div>
                         </div>
@@ -110,14 +110,14 @@
                                         the user with activites and advice with respective to their emotion/mood</p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                    <a href="#Mindfulness" class="btn btn-primary">View project</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
                                 <img class="featuredIcon" src="./Resources/img/caboIcon.png" class="card-img-top"
-                                    alt="Pash Logo">
+                                    alt="Cabo Logo">
                                 <div class=" card-body">
                                     <h5 class="card-title">Cabo</h5>
                                     <p class="card-text" style="font-size: 1.3rem;">A card game called <em>Cabo</em>
@@ -127,7 +127,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#projects" class="btn btn-primary">View project</a>
+                                    <a href="#Cabo" class="btn btn-primary">View project</a>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,9 @@
 
     <br><br>
     <div id="skills" class="headline" style="background-color: black;color: white;padding-top: 20pt;">Skills</div>
+    <div style="font-size: 2rem;background-color: black;color: white; text-align: center;">(Hover the boxes)</div>
     <section id="skillsContent">
+
         <div class="box">
             <div class="imgBox">
                 <img src="./Resources/img/python.png">
@@ -285,10 +287,15 @@
                 <div class="projLogo">
                     <img class="projImg" src="Resources/img/LimitedBooksLogo.png">
                     <br>
-                    <button>Click me</button>
+                    <a href="https://github.com/StevennTran/CP476Project"><button class="redirect"><span>To
+                                Github</span></button></a>
                 </div>
                 <div class="projDesc">
-                    <h3>This is where I will write my details about the project that i made</h3>
+                    <h1><b>Limited Books</b></h1>
+                    <h3>An online management system where users can view and purchase their favourite books from the
+                        comfort of their own home.</h3><br />
+                    <h3>Developed using: <b><strong>HTML, CSS, JavaScript, PHP, React/NodeJS, MongoDB,
+                                SQLi</strong></b></h3>
                 </div>
             </div>
 
@@ -296,10 +303,15 @@
                 <div class="projLogo">
                     <img class="projImg" src="Resources/img/caboIcon.png">
                     <br>
-                    <button>Click me</button>
+                    <a href="https://github.com/caboteam/Cabo"><button class="redirect"><span>To
+                                Github</span></button></a>
                 </div>
                 <div class="projDesc">
-                    <h3>This is where I will write my details about the project that i made</h3>
+                    <h1><b>Cabo</b></h1>
+                    <h3>A card game called Cabo with its main purpose being to improve memory of the users. The game was
+                        developed and designed in Android Studio using XML and Java for the front and back-end coding.
+                    </h3><br />
+                    <h3>Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                 </div>
             </div>
 
@@ -307,21 +319,75 @@
                 <div class="projLogo">
                     <img class="projImg" src="Resources/img/MindfulnessIcon.png">
                     <br>
-                    <button>Click me</button>
+                    <a href="https://github.com/StevennTran/Mindfulness"><button class="redirect"><span>To
+                                Github</span></button></a>
                 </div>
                 <div class="projDesc">
-                    <h3>This is where I will write my details about the project that i made</h3>
+                    <h1><b>Mindfulness</b></h1>
+                    <h3>The all-in-one mental wellness app that provides the user with activites and advice with
+                        respective to their emotion/mood</h3><br />
+                    <h3>Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                 </div>
             </div>
 
-            <div id="LimitedBooks" class="project">
+            <div id="Pash" class="project">
                 <div class="projLogo">
-                    <img class="projImg" src="Resources/img/LimitedBooksLogo.png">
+                    <img class="projImg" src="Resources/img/pashLogo.png">
                     <br>
-                    <button>Click me</button>
+                    <a href="https://github.com/mand6560/cp471-project"><button class="redirect"><span>To
+                                Github</span></button></a>
                 </div>
                 <div class="projDesc">
-                    <h3>This is where I will write my details about the project that i made</h3>
+                    <h1><b>Pash - Language & Compiler</b></h1>
+                    <h3>Pash is a simple-to-use, beginner-friendly language created to be used as a source language for
+                        a Compiler. The compiler component of the project deals with converting the Pash source code
+                        into real RISC assembly code. </h3><br />
+                    <h3>Developed using: <b><strong>Python</strong></b></h3>
+                </div>
+            </div>
+
+            <div id="MovieNight" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/movieNight.png">
+                    <br>
+                    <a href="https://github.com/mand6560/MovieNight"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Movie Night</b></h1>
+                    <h3>A simple and easy to use app to look up movies and TV shows, and add them to your
+                        watchlist/favourites.</h3>
+                    <br />
+                    <h3>Developed using: <b><strong>Swift (UIkit, Core Data), JSON, Google Books API </strong></b></h3>
+                </div>
+            </div>
+
+            <div id="HeartCross" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/heartCross.jpg">
+                    <br>
+                    <a href="https://devpost.com/software/heartcrossed"><button class="redirect"><span>To
+                                Devpost</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>HeartCross</b></h1>
+                    <h3>Website that allows concerned users to get direct information about their loved ones in natural
+                        disasters, without the need of their loved ones directly updating their status.</h3><br />
+                    <h3>Developed using: <b><strong>HTML, CSS, JavaScript, MongoDB , Google API</strong></b></h3>
+                </div>
+            </div>
+
+            <div id="Pinky" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/Pinky.jpg">
+                    <a href="https://devpost.com/software/pinky-idxw0v"><button class="redirect"><span>To
+                                Devpost</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Pinky</b></h1>
+                    <h3>Pinky motivates people to keep their promises by allowing them to make contracts with others. If
+                        broken, they agree to donate a set amount to a charitable organization.</h3><br />
+                    <h3>Developed using: <b><strong>Android Studio (Java) and Google Maps API</strong></b></h3>
                 </div>
             </div>
 
@@ -335,7 +401,8 @@
                     <div class=" row">
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                             <h5 class="footer-text"><a id="mailLink"
-                                    href="mailto:steven.tran38@hotmail.com">steven.tran38@hotmail.com</a></h5><br><br>
+                                    href="mailto:steven.tran38@hotmail.com">steven.tran38@hotmail.com</a></h5>
+                            <br><br>
                         </div>
                     </div>
                     <div class="row">
@@ -348,8 +415,10 @@
                                     src="./Resources/img/devpost.png"></a>
                         </div>
                     </div>
-                    <h4 style="text-align: center; color: white;margin-top: 30px;">Designed and developed by <u>Steven
-                            Tran</u></h4>
+                    <h4 style="text-align: center; color: white;margin-top: 30px;">Designed and developed by
+                        <u>Steven
+                            Tran</u>
+                    </h4>
                 </div>
             </div>
         </footer>
