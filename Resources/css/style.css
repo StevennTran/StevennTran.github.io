@@ -388,6 +388,7 @@ img.featuredIcon {
 }
 
 .skillInfo {
+  margin-top: 10px;
   z-index: 5;
   opacity: 0;
 }
@@ -427,7 +428,7 @@ img.featuredIcon {
   bottom: -5px;
   background: white;
   z-index: -2;
-  filter: blur(10px);
+  /* filter: blur(10px); */
 }
 
 .box:before,
@@ -443,6 +444,35 @@ img.featuredIcon {
 .box:nth-child(3):before,
 .box:nth-child(3):after {
   background: linear-gradient(235deg, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.infoDiv {
+  margin-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 1.8rem;
+  background-color: rgba(255, 255, 255, 0.322);
+}
+
+/* .box:hover .skillInfo .infoDiv {
+  animation: slide-up 1s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.25;
+    line-height: 500px;
+  }
+  to {
+    opacity: 1;
+    line-height: 30px;
+  }
+} */
+
+.skillLevel {
+  display: inline;
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 #projects {
@@ -496,13 +526,17 @@ img.featuredIcon {
   padding-left: 2vh;
   width: 70%;
   float: right;
-  overflow: hidden;
+  overflow: auto;
   /* background-color: red; */
   /* vertical-align: middle; */
 }
 
-.dev {
+.platform {
   margin-top: 2vh;
+}
+
+.dev {
+  margin-bottom: 2vh;
 }
 
 .redirect {

@@ -170,7 +170,7 @@
             </div>
             <div class="skillInfo">
                 <h2>Python</h2>
-                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <h4 class="skillLevel">Skill Level: </h4>
                 <svg class="filled-skill" width="35" height="20">
                     <rect id="skillLevel" rx="6" ry="6" width="35" height="20"
                         style="fill: var(--fill-colour);stroke:rgb(24, 63, 172);stroke-width:0.8;opacity:0.7" />
@@ -187,6 +187,13 @@
                 <svg class="filled-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
+                <p class="infoDiv">
+                    Python was the very first programming language I learned in school. It was the language that
+                    made me want to start coding in the first place. I've built a strong foundation in data structures
+                    through the use of Python and used it for the majority of my programming career - making
+                    python the most proficient programming language that I know. A couple of notable projects
+                    using Python include a <em>compiler</em>em> (shown below) and a <em>Hangman game</em> using Tkinter.
+                </p>
             </div>
         </div>
 
@@ -196,7 +203,7 @@
             </div>
             <div class="skillInfo">
                 <h2>Java</h2>
-                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <h4 class="skillLevel">Skill Level: </h4>
                 <svg class="filled-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
@@ -212,6 +219,13 @@
                 <svg class="unfill-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
+                <p class="infoDiv">
+                    Java was a language that I picked up in my 2nd year of university. I have built a strong foundation
+                    in object-oriented-programming principles while using Java to complete various projects and
+                    assignments in school. The main reason I wanted to learn Java was to build Android applications A
+                    few notable side projects are: <em>Cabo</em> - a (card game), <em>Mindfulness</em> (health app),
+                    and <em>Hangman</em> using JavaFX.
+                </p>
             </div>
         </div>
 
@@ -221,7 +235,7 @@
             </div>
             <div class="skillInfo">
                 <h2>HTML</h2>
-                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <h4 class="skillLevel">Skill Level: </h4>
                 <svg class="filled-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
@@ -239,7 +253,7 @@
                 </svg>
 
                 <h2>CSS</h2>
-                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <h4 class="skillLevel">Skill Level: </h4>
                 <svg class="filled-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
@@ -257,7 +271,7 @@
                 </svg>
 
                 <h2>JavaScript</h2>
-                <p style="display: inline; margin-right: 10px;">Skill Level: </p>
+                <h4 class="skillLevel">Skill Level: </h4>
                 <svg class="filled-skill" width="35" height="20">
                     <use xlink:href="#skillLevel" />
                 </svg>
@@ -274,9 +288,17 @@
                     <use xlink:href="#skillLevel" />
                 </svg>
 
+                <p class="infoDiv">
+                    Full-stack web development is something that I've grown very fond of over the past year.
+                    I've built a couple static webpages in the past, but recently I discovered that webpages can become
+                    much more interactive through the use of libraries and frameworks such as Bootstrap or Node/React.
+                    My recent projects dealing with web development include <em>Limited Books</em> and this current
+                    site.
+                </p>
+
+
             </div>
         </div>
-
 
     </section>
     <section id="projects">
@@ -292,10 +314,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Limited Books</b></h1>
-                    <h3>An online management system where users can view and purchase their favourite books from the
-                        comfort of their own home.</h3>
+                    <h2 class="platform">Platform: <b><strong>Web application</strong></b></h2>
                     <h3 class="dev">Developed using: <b><strong>HTML, CSS, JavaScript, PHP, React/NodeJS, MongoDB,
                                 SQLi</strong></b></h3>
+                    <h3>An online management system where users can view and purchase their favourite books from the
+                        comfort of their own home.</h3>
                 </div>
             </div>
 
@@ -308,10 +331,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Cabo</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Android Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                     <h3>A card game called Cabo with its main purpose being to improve memory of the users. The game was
                         developed and designed in Android Studio using XML and Java for the front and back-end coding.
                     </h3>
-                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                 </div>
             </div>
 
@@ -324,9 +348,10 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Mindfulness</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Android Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                     <h3>The all-in-one mental wellness app that provides the user with activites and advice with
                         respective to their emotion/mood</h3>
-                    <h3>Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
                 </div>
             </div>
 
@@ -339,10 +364,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Pash - Language & Compiler</b></h1>
+                    <h2 class="platform">Use: <b><strong>Compiler (Pash -> Assembly)</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Python</strong></b></h3>
                     <h3>Pash is a beginner-friendly language created to be used as the source language for
                         a Compiler. The compiler component of the project deals with converting the Pash source code
                         into real RISC assembly code. </h3>
-                    <h3 class="dev">Developed using: <b><strong>Python</strong></b></h3>
                 </div>
             </div>
 
@@ -355,10 +381,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Movie Night</b></h1>
-                    <h3>A simple and easy to use app to look up movies and TV shows, and add them to your
-                        watchlist/favourites.</h3>
+                    <h2 class="platform">Platform: <b><strong>IOS Application</strong></b></h2>
                     <h3 class="dev">Developed using: <b><strong>Swift (UIkit, Core Data), JSON, Google Books API
                             </strong></b></h3>
+                    <h3>A simple and easy to use app to look up movies and TV shows, and add them to your
+                        watchlist/favourites.</h3>
                 </div>
             </div>
 
@@ -371,10 +398,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>HeartCross</b></h1>
-                    <h3>Website that allows concerned users to get direct information about their loved ones in natural
-                        disasters, without the need of their loved ones directly updating their status.</h3>
+                    <h2 class="platform">Platform: <b><strong>Web Application</strong></b></h2>
                     <h3 class="dev">Developed using: <b><strong>HTML, CSS, JavaScript, MongoDB , Google API</strong></b>
                     </h3>
+                    <h3>Website that allows concerned users to get direct information about their loved ones in natural
+                        disasters, without the need of their loved ones directly updating their status.</h3>
                 </div>
             </div>
 
@@ -386,10 +414,11 @@
                 </div>
                 <div class="projDesc">
                     <h1><b>Pinky</b></h1>
-                    <h3>Pinky motivates people to keep their promises by allowing them to make contracts with others. If
-                        broken, they agree to donate a set amount to a charitable organization.</h3>
+                    <h2 class="platform">Platform: <b><strong>Web Application</strong></b></h2>
                     <h3 class="dev">Developed using: <b><strong>Android Studio (Java) and Google Maps API</strong></b>
                     </h3>
+                    <h3>Pinky motivates people to keep their promises by allowing them to make contracts with others. If
+                        broken, they agree to donate a set amount to a charitable organization.</h3>
                 </div>
             </div>
 
