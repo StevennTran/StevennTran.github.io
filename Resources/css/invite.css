@@ -42,4 +42,5 @@ body {
   .center-button {
     text-align: center; /* Center-align the button */
     margin-top: 20px; /* Optional: adds some space above the button */
+    margin-bottom: 40px;
 }
