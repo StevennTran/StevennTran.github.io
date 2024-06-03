@@ -7,7 +7,64 @@ body {
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
+    animation: fadeBackground 2s infinite;
 }
+@keyframes fadeBackground {
+    0%, 100% { background-color: #1a1a2e; }
+    50% { background-color: #1f1f32; }
+}
+
+.countdown {
+    text-align: center;
+    background: #17181f;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.digit {
+    font-size: 2em;
+    padding: 0 5px;
+}
+.unit {
+    font-size: 0.5em;
+}
+
+ul#countdown1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    margin-top: 18%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 20px 0;
+    color: #fff;
+    border: 1px solid #adafb2;
+    border-width: 1px 0;
+    overflow: hidden;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+    li {
+      margin: 0 -3px 0 0;
+      padding: 0;
+      display: inline-block;
+      width: 25%;
+      font-size: 72px;
+      font-size: 6vw;
+      text-align: center;
+      
+      .label {
+        color: #adafb2;
+        font-size: 36px;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
 .jumbotron {
     background-color: #16213e;
     color: white;
@@ -42,4 +99,5 @@ body {
   .center-button {
     text-align: center; /* Center-align the button */
     margin-top: 20px; /* Optional: adds some space above the button */
+    margin-bottom: 40px;
 }
