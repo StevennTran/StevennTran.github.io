@@ -1,87 +1,491 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>True Crime Movie Night</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/Resources/css/invite.css">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
-        <script>
-            function countdown() {
-                const countDate = new Date("April 17, 2024 18:30:00 EST").getTime();
-                const now = new Date().getTime();
-                const gap = countDate - now;
 
-                const second = 1000;
-                const minute = second * 60;
-                const hour = minute * 60;
-                const day = hour * 24;
 
-                const textDay = Math.floor(gap / day);
-                const textHour = Math.floor((gap % day) / hour);
-                const textMinute = Math.floor((gap % hour) / minute);
-                const textSecond = Math.floor((gap % minute) / second);
+<html>
 
-                document.getElementById("day").innerText = textDay < 10 ? '0' + textDay : textDay;
-                document.getElementById("hour").innerText = textHour < 10 ? '0' + textHour : textHour;
-                document.getElementById("minute").innerText = textMinute < 10 ? '0' + textMinute : textMinute;
-                document.getElementById("second").innerText = textSecond < 10 ? '0' + textSecond : textSecond;
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Tran</title>
+    <meta name="description" content="Personal Website for my projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Resources/css/style.css">
+    <link rel="stylesheet" href="./Resources/css/bootstrap.css">
+    <link rel="stylesheet" href="./Resources/css/font-awesome.min.css">
+    <link rel="icon" href="./Resources/img/logo.png">
 
-                setTimeout(countdown, 1000);
-            }
-            document.addEventListener('DOMContentLoaded', countdown);
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <img id="lightbulb" src="/Resources/img/lightbulb_icon.png" alt="Lightbulb" width="18%">
-            <div class="jumbotron">
-                <h1><div style="background-color: red;">INVITATION</div>True Crime Movie Night</h1>
-                <p> Babs, Come join me for an exciting movie night!</p>
+    <!-- fill:dodgerblue; -->
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">&uarr;</button>
+
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" style="margin-left: 2%; font-size: 2rem;" href=""> <img
+                    src="./Resources/img/logo.png" style=" width: 30px; height: auto;"> Steven Tran</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto ps-auto" style="margin-right: 2%">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
-            <img src="/Resources/img/movieIcon.jpg" alt="What Jennifer Did" class="center">
-            <h3 style="text-align: center;">Find out the truth about Jennifer! 😮</h3>
-            
-            
-            <ul id="countdown1">
-                <li class="time-unit">
-                    <div class="number" id="day">00</div>
-                    <div class="label">Days</div>
-                </li>
-                <li class="time-unit">
-                    <div class="number" id="hour">00</div>
-                    <div class="label">Hours</div>
-                </li>
-                <li class="time-unit">
-                    <div class="number" id="minute">00</div>
-                    <div class="label">Minutes</div>
-                </li>
-                <li class="time-unit">
-                    <div class="number" id="second">00</div>
-                    <div class="label">Seconds</div>
-                </li>
-            </ul>
+        <div id="bigBanner">
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bannerContent row">
+                <div class="temp col-sm-6">
+                    <h2 id="welcome" class="centerText">Welcome to my </br>Website</h2><br>
+                    <!-- <h2 style="color: white;padding-left: 2rem;">(Work in progress...)</h2> -->
+                    <h4 id="socialText">Get Connected</h4>
+                    <br>
+                    <div id="socialMedia">
+                        <a href="https://www.linkedin.com/in/stevenntran/"><img class="imgIcon"
+                                src="./Resources/img/linkedin.png"></a>
+                        <a href="https://github.com/StevennTran"><img class="imgIcon"
+                                src="./Resources/img/github.png"></a>
+                        <a href="https://devpost.com/StevennTran"><img class="imgIcon"
+                                src="./Resources/img/devpost.png"></a>
+                        <a href="https://drive.google.com/file/d/1rFynGojMzrGEW6usJ3Bnp8h_8uBwuuEO/view?usp=sharing"><button
+                                id="resumeButton">Download Resume</button></a>
+                    </div>
+                </div>
 
-            <hr>
-            
-            <h3><strong>Date:</strong> April 17, 2024<br>
-                <strong>Time:</strong> 6:30 PM (Eastern)
-            </h3>
-            <div class="center-button">
-                <a href="mailto:steven.tran38@hotmail.com?subject=RSVP for True Crime Movie Night&body=I would like to RSVP for the movie night this evening. Looking forward to it babs!" class="btn btn-dark">RSVP</a>
+                <div class="col-sm-6">
+                    <div id="featureHeader">Featured Projects</div>
+                    <br>
+                    <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-left: 5rem; padding-right: 5rem;">
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src="./Resources/img/LimitedBooksLogo.png"
+                                    class="card-img-top" alt="Limited Books Logo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Limited Books</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;"> An online management system
+                                        where users can view and purchase
+                                        their favourite books from the comfort of their own home.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#LimitedBooks" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src=" ./Resources/img/MindfulnessIcon.png"
+                                    class="card-img-top" alt="Mindfulness Logo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mindfulness</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">The all-in-one mental wellness app
+                                        that provides
+                                        the user with activites and advice with respective to their emotion/mood</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#Mindfulness" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" style="background-color: rgba(0, 0, 0, 0.226);color: white;">
+                                <img class="featuredIcon" src="./Resources/img/caboIcon.png" class="card-img-top"
+                                    alt="Cabo Logo">
+                                <div class=" card-body">
+                                    <h5 class="card-title">Cabo</h5>
+                                    <p class="card-text" style="font-size: 1.3rem;">A card game called <em>Cabo</em>
+                                        with its main purpose being to improve memory of the users. The game was
+                                        developed and designed in Android Studio using XML and Java for the front and
+                                        back-end coding.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#Cabo" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script>
-            // JavaScript for flickering lightbulb
-            function flickerLight() {
-                var opacity = Math.random();
-                document.getElementById('lightbulb').style.opacity = opacity;
-                setTimeout(flickerLight, 200);
-            }
-            flickerLight(); // Start the flickering effect
-        </script>
-    </body>
+    </header>
+
+    <div id="progressBar"></div>
+    <div id="scrollPath"></div>
+    <section id="introduction" style="display: flex; justify-content: center;align-items: center;  flex-wrap: wrap;">
+        <div class="headline">Introduction</div>
+        <div class="content">
+            <div id="left">
+                <span style="font-size: rem;font-weight: 900;">Hello and welcome to my website! </span><br>My name is
+                Steven Tran, a
+                recent Computer Science Graduate from
+                Wilfrid Laurier University. I’m a
+                passionate individual who enjoys problem solving & thinking creatively. I'm known for being a
+                detail-oriented, well-organized team
+                player who won't be satisfied until the job is done. I never miss deadlines, I'm a good communicator
+                and I can juggle multiple tasks at once. With my educational background coming out of post-secondary,
+                I'm looking forward for an opportunity to take the next step in my career.
+            </div>
+            <div id="right">
+                <img src="./Resources/img/logo.png">
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <div id="skills" class="headline" style="background-color: rgb(44, 44, 44);color: white;padding-top: 2pt;">Skills
+    </div>
+    <div
+        style="font-size: 2rem;background-color: rgb(44, 44, 44);color: white; text-align: center;padding-bottom: 10pt;">
+        (Hover the boxes)
+    </div>
+    <section id="skillsContent">
+        <!-- <canvas id=c> -->
+
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/python.png">
+            </div>
+            <div class="skillInfo dark-mode">
+                <h2>Python</h2>
+                <h4 class="skillLevel">Skill Level: </h4>
+                <svg class="filled-skill" width="35" height="20">
+                    <rect id="skillLevel" rx="6" ry="6" width="35" height="20"
+                        style="fill: var(--fill-colour);stroke:rgb(24, 63, 172);stroke-width:0.8;opacity:0.7" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <p class="infoDiv">
+                    Python was the very first programming language I learned in school. It was the language that
+                    made me want to start coding in the first place. I've built a strong foundation in data
+                    structures
+                    through the use of Python and used it for the majority of my programming career - making
+                    python the most proficient programming language that I know. A couple of notable projects
+                    using Python include a <em>compiler</em> (shown below) and a <em>Hangman game</em> using
+                    Tkinter.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/java.png">
+            </div>
+            <div class="skillInfo dark-mode">
+                <h2>Java</h2>
+                <h4 class="skillLevel">Skill Level: </h4>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="unfill-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <p class="infoDiv">
+                    Java was a language that I picked up in my 2nd year of university. I have built a strong
+                    foundation
+                    in object-oriented-programming principles while using Java to complete various projects and
+                    assignments in school. The main reason I wanted to learn Java was to build Android applications
+                    A
+                    few notable side projects are: <em>Cabo</em> - a (card game), <em>Mindfulness</em> (health app),
+                    and <em>Hangman</em> using JavaFX.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                <img src="./Resources/img/webdev.png">
+            </div>
+            <div class="skillInfo dark-mode">
+                <h2>HTML</h2>
+                <h4 class="skillLevel">Skill Level: </h4>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+                <h2>CSS</h2>
+                <h4 class="skillLevel">Skill Level: </h4>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+                <h2>JavaScript</h2>
+                <h4 class="skillLevel">Skill Level: </h4>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="filled-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+                <svg class="unfill-skill" width="35" height="20">
+                    <use xlink:href="#skillLevel" />
+                </svg>
+
+                <p class="infoDiv">
+                    Full-stack web development is something that I've grown very fond of over the past year.
+                    I've built a couple static webpages in the past, but recently I discovered that webpages can
+                    become
+                    much more interactive through the use of libraries and frameworks such as Bootstrap or
+                    Node/React.
+                    My recent projects dealing with web development include <em>Limited Books</em> and this current
+                    site.
+                </p>
+
+
+            </div>
+        </div>
+        <!-- </canvas> -->
+    </section>
+    <section id="projects">
+        <div class="headline">Projects</div>
+        <div class="content">
+
+            <div id="LimitedBooks" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/LimitedBooksLogo.png">
+                    <br>
+                    <a href="https://github.com/StevennTran/CP476Project"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Limited Books</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Web application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>HTML, CSS, JavaScript, PHP, React/NodeJS, MongoDB,
+                                SQLi</strong></b></h3>
+                    <h3>An online management system where users can view and purchase their favourite books from the
+                        comfort of their own home.</h3>
+                </div>
+            </div>
+
+            <div id="Cabo" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/caboIcon.png">
+                    <br>
+                    <a href="https://github.com/caboteam/Cabo"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Cabo</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Android Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
+                    <h3>A card game called Cabo with its main purpose being to improve memory of the users. The game was
+                        developed and designed in Android Studio using XML and Java for the front and back-end coding.
+                    </h3>
+                </div>
+            </div>
+
+            <div id="Mindfulness" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/MindfulnessIcon.png">
+                    <br>
+                    <a href="https://github.com/StevennTran/Mindfulness"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Mindfulness</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Android Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java), XML</strong></b></h3>
+                    <h3>The all-in-one mental wellness app that provides the user with activites and advice with
+                        respective to their emotion/mood</h3>
+                </div>
+            </div>
+
+            <div id="Pash" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/pashLogo.png">
+                    <br>
+                    <a href="https://github.com/mand6560/cp471-project"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Pash - Language & Compiler</b></h1>
+                    <h2 class="platform">Use: <b><strong>Compiler (Pash -> Assembly)</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Python</strong></b></h3>
+                    <h3>Pash is a beginner-friendly language created to be used as the source language for
+                        a Compiler. The compiler component of the project deals with converting the Pash source code
+                        into real RISC assembly code. </h3>
+                </div>
+            </div>
+
+            <div id="webglExample" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/cgi_screenshot.png">
+                    <br>
+                    <a href="https://60a6ef0ecdf2cc00cedd2b8f--practical-golick-b94bc9.netlify.app/"><button
+                            class="redirect"><span>Try Demo</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>WebGL Programming - Display Case</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Web application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>HTML, CSS, JavaScript (using Three.js)
+                            </strong></b></h3>
+                    <h3>A simple and basic example of cgi programming using Three.js to display a self-rotating display
+                        case. Mouse support is implemented for paning to specific angles.</h3>
+                </div>
+            </div>
+
+            <div id="MovieNight" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/movieNight.png">
+                    <br>
+                    <a href="https://github.com/mand6560/MovieNight"><button class="redirect"><span>To
+                                Github</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Movie Night</b></h1>
+                    <h2 class="platform">Platform: <b><strong>IOS Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Swift (UIkit, Core Data), JSON, Google Books API
+                            </strong></b></h3>
+                    <h3>A simple and easy to use app to look up movies and TV shows, and add them to your
+                        watchlist/favourites.</h3>
+                </div>
+            </div>
+
+            <div id="HeartCross" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/heartCross.jpg">
+                    <br>
+                    <a href="https://devpost.com/software/heartcrossed"><button class="redirect"><span>To
+                                Devpost</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>HeartCross</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Web Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>HTML, CSS, JavaScript, MongoDB , Google API</strong></b>
+                    </h3>
+                    <h3>Website that allows concerned users to get direct information about their loved ones in natural
+                        disasters, without the need of their loved ones directly updating their status.</h3>
+                </div>
+            </div>
+
+            <div id="Pinky" class="project">
+                <div class="projLogo">
+                    <img class="projImg" src="Resources/img/Pinky.jpg">
+                    <a href="https://devpost.com/software/pinky-idxw0v"><button class="redirect"><span>To
+                                Devpost</span></button></a>
+                </div>
+                <div class="projDesc">
+                    <h1><b>Pinky</b></h1>
+                    <h2 class="platform">Platform: <b><strong>Web Application</strong></b></h2>
+                    <h3 class="dev">Developed using: <b><strong>Android Studio (Java) and Google Maps API</strong></b>
+                    </h3>
+                    <h3>Pinky motivates people to keep their promises by allowing them to make contracts with others. If
+                        broken, they agree to donate a set amount to a charitable organization.</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <footer class="footer" id="footerId">
+            <div class="container-fluid">
+                <div class="footer-container">
+                    <div class=" row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <h5 class="footer-text"><a id="mailLink"
+                                    href="mailto:steven.tran38@hotmail.com">steven.tran38@hotmail.com</a></h5>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                            <a href="https://www.linkedin.com/in/stevenntran/"><img class="imgIcon"
+                                    src="./Resources/img/linkedin.png"></a>
+                            <a href="https://github.com/StevennTran"><img class="imgIcon"
+                                    src="./Resources/img/github.png"></a>
+                            <a href="https://devpost.com/StevennTran"><img class="imgIcon"
+                                    src="./Resources/img/devpost.png"></a>
+                        </div>
+                    </div>
+                    <h4 style="text-align: center; color: white;margin-top: 30px;">Designed and developed by
+                        <u>Steven
+                            Tran</u>
+                    </h4>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
 </html>
+
