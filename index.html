@@ -150,6 +150,7 @@
     <!-- Button -->
     <button onclick="processText()">Clean Text</button>
     <button id="copyBtn" onclick="copyText()">Copy to Clipboard</button>
+    <button id="clearBtn" onclick="clearText()">Clear</button>
 
     <!-- Output -->
     <div id="output"></div>
@@ -182,6 +183,11 @@ function copyText() {
       console.error("Failed to copy: ", err);
     });
 }
+
+function clearText() {
+    document.getElementById("inputText").value = ""
+}
+    
 </script>
       
   </div>
